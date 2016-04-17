@@ -1,0 +1,8 @@
+<ion-content class="pageOutput">
+  <ion-list>
+    <ion-item *ngFor="#n of outputs">
+      <ion-label>Ausgang {{n.id}}</ion-label>
+      <ion-toggle checked="{{n.state}}" (change)="changed($event, n.id)"></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-navbar *navbar>
+  <ion-title>IPIO</ion-title>
+</ion-navbar>
+
+<ion-content class="pageSettings">
+  <ion-item-group>
+    <ion-item-divider light>API-Server</ion-item-divider>
+    <ion-item>
+      <ion-label floating>URL</ion-label>
+      <ion-input type="text" [(ngModel)]="apiSettings.url"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Benutzername</ion-label>
+      <ion-input type="text" [(ngModel)]="apiSettings.user"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Passwort</ion-label>
+      <ion-input type="password" [(ngModel)]="apiSettings.password"></ion-input>
+    </ion-item>
+  </ion-item-group>
+  <div padding>
+    <button primary block (click)="save()">Speichern</button>
+  </div>
+</ion-content>

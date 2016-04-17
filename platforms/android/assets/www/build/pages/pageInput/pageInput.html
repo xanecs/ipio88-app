@@ -1,0 +1,8 @@
+<ion-content class="pageInput">
+  <ion-list>
+    <ion-item *ngFor="#n of [1, 2, 3, 4, 5, 6, 7, 8]">
+      <ion-icon *ngIf="n > 5" name="radio-button-on" item-right></ion-icon>
+      Eingang {{n}}
+    </ion-item>
+  </ion-list>
+</ion-content>
